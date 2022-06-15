@@ -1,0 +1,12 @@
+KOMANDE: 
+
+docker build -t server:1 .
+docker build -t client:1 .
+
+docker run -d -p 8081:8081 server:1
+docker run --network="host" client:1
+
+Eksportovani uz pomoc docker export
+
+
+

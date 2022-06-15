@@ -1,0 +1,5 @@
+kubectl apply -f server.yaml
+kubectl apply -f client.yaml
+
+kubectl get pods
+

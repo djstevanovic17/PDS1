@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+        name: client
+spec:
+        completions: 3 #parallism isto moguce da rade paralelno
+        template:
+                spec:
+                        containers:
+                                name: client
+                                image: client:1
+                                command: ["echo", "client working"]
+                        restartPolicty: Never
+                        
